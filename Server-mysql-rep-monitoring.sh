@@ -2,7 +2,7 @@
 
 #Configuring network
 cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
-cp ./monitoring-network /etc/netplan/00-installer-config.yaml
+cp ./mysql-rep-ip-conf /etc/netplan/00-installer-config.yaml
 netplan apply
 
 #Installing and configuring MySQL server
