@@ -11,7 +11,7 @@ mysql --execute="start replica;"
 
 #Installing and configuring JavaVM
 apt install default-jdk -y
-cp ./replica-mysql-config /etc/elasticsearch/jvm.options.d/jvm.options
+cp ./jvm /etc/elasticsearch/jvm.options.d/jvm.options
 systemctl daemon-reload
 
 apt install prometeheus prometheus-node-exporter -y
