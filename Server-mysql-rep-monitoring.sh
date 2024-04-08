@@ -14,7 +14,7 @@ apt install default-jdk -y
 cp ./jvm /etc/elasticsearch/jvm.options.d/jvm.options
 systemctl daemon-reload
 
-apt install prometeheus prometheus-node-exporter -y
+apt install prometheus prometheus-node-exporter -y
 systemctl enable --now prometeheus
 systemctl enable --now prometeheus-node-exporter
 cp ./prometheus-conf /etc/prometheus/prometheus.yml
